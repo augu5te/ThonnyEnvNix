@@ -21,7 +21,7 @@
         in
           pkgs.mkShell {
             buildInputs = [ pkgs.thonny ] ++ pythonEnv;
-            shellHook = ''echo Thonny dev'';
+            #shellHook = ''echo Thonny dev && thonny'';
           };
       };
 
